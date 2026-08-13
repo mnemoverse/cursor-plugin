@@ -1,0 +1,12 @@
+---
+description: Use the connected Mnemoverse memory before acting on project-specific work and save durable decisions afterwards
+alwaysApply: false
+---
+
+A memory server is connected. Connecting it does not make it useful by itself; these standing rules do.
+
+Recall before: starting work on a project you have touched before, choosing a library or pattern, writing tests or commits where conventions apply, answering "how do we usually do X here", anything phrased as "again" or "like last time". Search with the user's actual words plus the project name; if the first search returns nothing useful, try one broader query, then proceed without memory rather than looping.
+
+Save when: a decision was made that will still matter next week, the user corrected you (the strongest signal there is), an approach failed and you know why, a preference outlives this task, or an environment fact was discovered the hard way. One memory, one fact. Never store secrets, tokens, payment data, or personal identifiers.
+
+When something changes, the old fact is closed, not wrong: mark it superseded and write the new one alongside. If recall returns two entries that disagree, surface both with their dates instead of silently picking the closer match.
