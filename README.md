@@ -4,7 +4,7 @@ Persistent memory for AI agents, shared across tools. One account gives Cursor t
 
 ## What the plugin bundles
 
-- **MCP server** (`mcp.json`): the hosted Mnemoverse server at `https://mcp.mnemoverse.com/mcp`. First use opens a browser sign-in (OAuth 2.1 with PKCE, Cursor's callback is supported); free tier at [console.mnemoverse.com](https://console.mnemoverse.com), no credit card, no API key to paste.
+- **MCP server** (`mcp.json`): the hosted Mnemoverse server at `https://mcp.mnemoverse.com/mcp`. First use opens a browser sign-in (OAuth 2.1 with PKCE, Cursor's callback is supported); free tier at [console.mnemoverse.com](https://console.mnemoverse.com?utm_source=github&utm_medium=readme&utm_campaign=cursor-plugin), no credit card, no API key to paste.
 - **Rule** (`rules/agent-memory-discipline.mdc`): recall before acting on project-specific work, save durable decisions and corrections afterwards, close superseded facts instead of overwriting them.
 - **Skill** (`skills/agent-memory-discipline/`): the same discipline in full, published standalone as CC0 at [mnemoverse/agent-memory-discipline](https://github.com/mnemoverse/agent-memory-discipline).
 
