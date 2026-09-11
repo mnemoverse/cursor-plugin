@@ -1,9 +1,15 @@
 {
   "name": "mnemoverse",
+  "displayName": "Mnemoverse",
   "description": "Persistent memory for AI agents, shared across tools: write a memory in Cursor, recall it in Claude Code, VS Code, or any MCP client. OAuth sign-in, no API key to paste.",
   "version": "1.0.0",
   "author": {
     "name": "Mnemoverse",
     "url": "https://mnemoverse.com"
-  }
+  },
+  "homepage": "https://mnemoverse.com/docs/api/cursor",
+  "repository": "https://github.com/mnemoverse/cursor-plugin",
+  "license": "MIT",
+  "keywords": ["agent-memory", "cursor", "mcp", "oauth", "persistent-memory"],
+  "logo": "assets/logo.png"
 }
