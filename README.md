@@ -10,7 +10,19 @@ Persistent memory for AI agents, shared across tools. One account gives Cursor t
 
 ## Tools
 
-Ten tools from the remote server: `memory_read`, `memory_write`, `memory_list_recent`, `memory_stats`, `memory_feedback`, four shared-room tools, and `vault_list` (aliases only). The two delete tools available in the [local package](https://mnemoverse.com/docs/api/mcp-server) are deliberately not exposed remotely, so a one-time sign-in can never wipe memory.
+The documented remote tool surface includes `memory_read`, `memory_write`, `memory_list_recent`, `memory_stats`, `memory_feedback`, shared-room tools, and `vault_list` (secret aliases and metadata, not secret values). See the [current remote tool reference](https://mnemoverse.com/docs/api/remote-mcp-server) for the exposed surface.
+
+Deletion is not an MCP tool on either the remote server or the current [local package](https://mnemoverse.com/docs/api/mcp-server); it is an administrative REST API operation. For a correction through MCP, write a fresh memory with `memory_write`; a corrective write alone does not establish that the older memory was superseded. The bundled rule describes the desired correction discipline, but it does not add a structured supersession tool: `supersedes`, `include_history`, and supersession-chain access are documented on the [REST API](https://mnemoverse.com/docs/api/reference), not exposed by this plugin's memory tools.
+
+## Check your first cross-tool recall
+
+After connecting and signing in, use a harmless fictional fact:
+
+1. In Cursor, ask: "Use `memory_write` to save this in `project:cursor-plugin-demo`: The fictional Lantern demo serves its status page on port 7319." Check that the tool reports a successful write.
+2. Open a fresh chat in another connected MCP client, signed in to the **same Mnemoverse account**. Ask: "Use `memory_read` in `project:cursor-plugin-demo`: Which port serves the Lantern demo's status page?"
+3. Check that the tool result contains the saved fact. An answer from existing chat context alone does not verify cross-tool memory.
+
+If recall is empty, check the account and exact domain, then confirm that the client actually called the tool. This checks saving and retrieval, not correction semantics or automatic recall on every future task. For the standing recall/save loop, see [Make Your Agent Use Memory](https://mnemoverse.com/docs/api/agent-memory).
 
 ## What gets stored
 
