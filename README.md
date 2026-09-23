@@ -32,6 +32,8 @@ Only what you or the agent explicitly save through the memory tools. It does not
 
 Issues in this repository, or [support@mnemoverse.com](mailto:support@mnemoverse.com).
 
+The open-source MCP server package (MIT) lives at [mnemoverse/mcp-memory-server](https://github.com/mnemoverse/mcp-memory-server). A star there helps other builders find the project.
+
 ## License
 
 Plugin: MIT. The bundled skill is CC0-1.0.
