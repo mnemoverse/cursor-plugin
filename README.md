@@ -18,7 +18,7 @@ Only what you or the agent explicitly save through the memory tools. It does not
 
 ## Support
 
-Issues in this repository, or [helloworld@uinside.org](mailto:helloworld@uinside.org).
+Issues in this repository, or [support@mnemoverse.com](mailto:support@mnemoverse.com).
 
 ## License
 
