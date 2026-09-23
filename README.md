@@ -10,7 +10,7 @@ Persistent memory for AI agents, shared across tools. One account gives Cursor t
 
 ## Tools
 
-Ten tools from the remote server: `memory_read`, `memory_write`, `memory_list_recent`, `memory_stats`, `memory_feedback`, four shared-room tools, and `vault_list` (aliases only). The two delete tools available in the [local package](https://mnemoverse.com/docs/api/mcp-server) are deliberately not exposed remotely, so a one-time sign-in can never wipe memory.
+Ten tools from the remote server: `memory_read`, `memory_write`, `memory_list_recent`, `memory_stats`, `memory_feedback`, four shared-room tools, and `vault_list` (aliases only). Neither the remote server nor the [local package](https://mnemoverse.com/docs/api/mcp-server) has a delete tool, so a one-time sign-in can never wipe memory.
 
 ## What gets stored
 
