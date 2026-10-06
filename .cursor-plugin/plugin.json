@@ -2,7 +2,7 @@
   "name": "mnemoverse",
   "displayName": "Mnemoverse",
   "description": "Persistent memory for AI agents, shared across tools: write a memory in Cursor, recall it in Claude Code, VS Code, or any MCP client. OAuth sign-in, no API key to paste.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Mnemoverse",
     "url": "https://mnemoverse.com"
