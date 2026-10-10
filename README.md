@@ -26,7 +26,7 @@ If recall is empty, check the account and exact domain, then confirm that the cl
 
 ## What gets stored
 
-Only what you or the agent explicitly save through the memory tools. It does not record conversations and does not read chat history. Privacy policy: [mnemoverse.com/privacy](https://mnemoverse.com/privacy).
+Only what you or the agent explicitly save through the memory tools. It does not record conversations and does not read chat history. Privacy policy: [mnemoverse.com/docs/legal/privacy-policy](https://mnemoverse.com/docs/legal/privacy-policy).
 
 ## Support
 
