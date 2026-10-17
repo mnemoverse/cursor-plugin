@@ -10,7 +10,7 @@ Persistent memory for AI agents, shared across tools. One account gives Cursor t
 
 ## Tools
 
-The documented remote tool surface includes `memory_read`, `memory_write`, `memory_list_recent`, `memory_stats`, `memory_feedback`, shared-room tools, and `vault_list` (secret aliases and metadata, not secret values). See the [current remote tool reference](https://mnemoverse.com/docs/api/remote-mcp-server) for the exposed surface.
+The documented remote tool surface includes `memory_read`, `memory_write`, `memory_list_recent`, `memory_stats`, `memory_feedback`, tools for shared rooms (beta), and `vault_list` (secret aliases and metadata, not secret values). See the [current remote tool reference](https://mnemoverse.com/docs/api/remote-mcp-server) for the exposed surface.
 
 Deletion is not an MCP tool on either the remote server or the current [local package](https://mnemoverse.com/docs/api/mcp-server); it is an administrative REST API operation. For a correction through MCP, write a fresh memory with `memory_write`; a corrective write alone does not establish that the older memory was superseded. The bundled rule describes the desired correction discipline, but it does not add a structured supersession tool: `supersedes`, `include_history`, and supersession-chain access are documented on the [REST API](https://mnemoverse.com/docs/api/reference), not exposed by this plugin's memory tools.
 
@@ -26,7 +26,7 @@ If recall is empty, check the account and exact domain, then confirm that the cl
 
 ## What gets stored
 
-Only what you or the agent explicitly save through the memory tools. It does not record conversations and does not read chat history. Privacy policy: [mnemoverse.com/docs/legal/privacy-policy](https://mnemoverse.com/docs/legal/privacy-policy).
+Only what you or the agent explicitly save through the memory tools. It does not record conversations and does not read chat history. Privacy policy: [mnemoverse.com/docs/legal/privacy-policy](https://mnemoverse.com/docs/legal/privacy-policy). Terms of service: [mnemoverse.com/docs/legal/terms-of-service](https://mnemoverse.com/docs/legal/terms-of-service).
 
 ## Support
 
